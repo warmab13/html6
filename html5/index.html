@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<section>
+	<article>
+		<video width="400" height="250" controls autoplay="autoplay" loop="loop">
+			<source src="public/video/tobacco.mp4" type="video/mp4">
+		</video>
+	</article>
+</section>
+<section>
+	<article>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/3gzyy9UMRvg" frameborder="0" allowfullscreen></iframe>
+	</article>
+</section>
+<section>
+	<article>
+		<iframe src="https://player.vimeo.com/video/182931935" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<p>
+		<a href="https://vimeo.com/182931935">KHRUANGBIN: Two Fish and an Elephant</a> from 
+		<a href="https://vimeo.com/scottdungate">scotty_fingers</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+	</article>
+</section>
+<section>
+	<article>
+		<progress value="50" max="100"></progress>
+	</article>
+</section>
+<section>
+	<article>
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+			<input type="range" id="a" value="50">100
+			+<input type="number" id="b" value="50">
+			=<output name="x" for="a b"></output>		
+		</form>
+	</article>
+</section>
+<section>
+	<article>
+	<h3>Tengo dos piezas de 10</h3>
+		<meter value="2" min="0" max="10">2 piezas de 10</meter>
+		<br>
+		<h3>Este es el 60 porciento de la calificación</h3>
+		<meter value="0.6">60%</meter>
+	</article>
+</section>
+	<p><strong>Lorem ipsum dolor:</strong> sit amet, consectetur adipisicing elit. <mark>Dolorum, consequuntur architecto ad magnam vitae excepturi quia</mark>, eaque dolor. Sapiente ratione ad dignissimos molestiae atque illum ipsa dolore nihil quas, cupiditate.</p>
+	<details open="open">
+		<summary>Mis platillos Show more...</summary>
+		<ul>
+			<li>Chilaquiles</li>
+			<li>Chiles en nogada</li>
+			<li>Tamales</li>
+			<li>Guajolota</li>
+		</ul>
+		<input type="button" value="Hola">
+	</details>
+	<select name="autos" id="cars">
+		<option value="Audi">Audi</option>
+		<option value="Ferrari">Ferrari</option>
+		<option value="Lambo">Lambo</option>
+	</select>
+
+	<input list="canalesYoutube">
+	<datalist id="canalesYoutube">
+		<option value="Platzi"></option>
+		<option value="CodeSchool"></option>
+		<option value="Coursera"></option>
+	</datalist>
+	<br>
+		
+	<audio controls="controls">
+		<source src="public/sounds/useryeah.mp3" type="audio/mp3">
+	</audio>
+	<audio >
+		<source src="public/sounds/mygod.wav" type="audio/wav">
+	</audio>
+
+	<canvas id="miCanvas" width="500" height="400" style="border: groove; border-width: 10px; border-color: red;">
+		
+	</canvas>
+	<script>
+	var canvas = document.getElementById("miCanvas");
+	var ctx = canvas.getContext("2d");
+	var grd = ctx.createLinearGradient(0,0,200,0);
+	grd.addColorStop(0,"red");
+	grd.addColorStop(1, "white");
+	ctx.fillStyle = grd;
+	ctx.fillRect(10,10,150,80); 
+ 	</script>
+
+	<!--<script>
+	var canvas = document.getElementById("miCanvas");
+	var ctx = canvas.getContext("2d");
+	ctx.fillRect(5,5,80,80)
+	</script>-->
+
+	<!--<script>
+	 var c = document.getElementById("miCanvas");
+	 var ctx = c.getContext("2d");
+	 ctx.moveTo(0,0);
+	 ctx.lineTo(200,100);
+	 ctx.stroke();
+	 </script>-->
+
+	 <!--<script>
+		 var c = document.getElementById("miCanvas");
+		 var ctx = c.getContext("2d");
+		 ctx.beginPath();
+		 ctx.arc(95,50,40,0,2*Math.PI);
+		 ctx.stroke();
+	 </script>-->
+
+	 <!--<script>
+ 		var c = document.getElementById("miCanvas");
+ 		var ctx = c.getContext("2d");
+ 		ctx.font = "30px Arial";
+ 		ctx.strokeText("Hello World",10,50);
+ 	</script>
+ 	<script>
+ 		var canvas = document.getElementById("miCanvas");
+ 		var ctx = canvas.getContext("2d");
+ 		var grd = ctx.createLinearGradient(0,0,200,0);
+ 		grd.addColorStop(0,"red");
+ 		grd.addColorStop(1, "white");
+ 		ctx.fillStyle = grd;
+ 		ctx.fillRect(10,10,150,80); 
+ 	</script>-->
+</body>
+</html>
